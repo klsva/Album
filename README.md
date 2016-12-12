@@ -1,7 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Тема пока обтекаемо: 
+Возможность создания меню на неделю на определенное количество человек.
+Возможность сохранить меню.
+Возможность отправить список покупок на почту.
 
 Things you may want to cover:
 
