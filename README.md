@@ -15,9 +15,10 @@
 | Table              | Fields        | Comment |
 |--------------------|---------------|---------|
 | User               |               |Таблица пользователей
-|                    |               |
-|                    | id            |         |
-|                    | name_product  |         |
+|                    | id            |
+|                    | name          |         |
+|                    | email  |         |
+| |password|
 | ingredients        |               |         |
 |                    | id            |         |
 |                    | id_dish       |         |
