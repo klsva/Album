@@ -12,44 +12,32 @@
 ***
 Описание сущностей
 
-| Table              | Fields        | Comment |
-|--------------------|---------------|---------|
-| User               |               |Таблица пользователей
-|                    | id            |
-|                    | name          |         |
-|                    | email  |         |
-| |password|
-| ingredients        |               |         |
-|                    | id            |         |
-|                    | id_dish       |         |
-|                    | quantity      |         |
-|                    | measure       |         |
-| measure            |               |         |
-|                    | id            |         |
-|                    | unit          |         |
-| dish               |               |         |
-|                    | id            |         |
-|                    | id_category   |         |
-|                    | name_dish     |         |
-|                    | recipe        |         |
-| category           |               |         |
-|                    | id            |         |
-|                    | name_category |         |
-| ingredients_dishes |               |         |
-|                    | id_ingredient |         |
-|                    | id_dish       |         |
-| menu               |               |         |
-|                    | id            |         |
-|                    | name_menu     |         |
-|                    | day           |         |
-|                    | id_eating     |         |
-|                    | id_dish       |         |
-| eating             |               |         |
-|                    | id            |         |
-|                    | name_eating   |         |
-| user_menu          |               |         |
-|                    | id_user       |         |
-|                    | id_menu       |         |
-| user               |               |         |
+| User    |                   | Таблица пользователей             |
+|---------|-------------------|-----------------------------------|
+|         | id                | PK                                |
+|         | name              | имя на сайте                      |
+|         | email             | используется для рег/авт          |
+|         | password          |                                   |
+| Album   |                   | Таблица альбомов/конкурсов        |
+|         | id                | PK                                |
+|         | album_name        | Название конкурса                 |
+|         | album_description | Описание альбома/конкурса         |
+| Photo   |                   | Таблица фотографий                |
+|         | id                | PK                                |
+|         | photo_name        | Название фотографии               |
+|         | album_id          | FK                                |
+|         | photo_description | Описание фотографии               |
+|         | file              | путь к файлу                      |
+|         | ave_value         |                                   |
+| Value   |                   | Таблица оценок фотографии         |
+|         | id                | PK                                |
+|         | user_id           | FK1                               |
+|         | image_id          | FK2                               |
+|         | value             |                                   |
+| Comment |                   | Таблица комментариев к фотографии |
+|         | id                | PK                                |
+|         | user_id           | FK1                               |
+|         | photo_id          | FK2                               |
+|         | content           |                                   |
 
 * ...
